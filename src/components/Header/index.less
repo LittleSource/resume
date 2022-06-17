@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.first-row{
+    justify-content: space-between;
+    border-bottom: 2px solid #01a3e3;
+    .name {
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        .small {
+            padding-left: 10px;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+    }
+}
+
+.job{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.person-info{
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 500;
+    .person-info-text{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .right-text{
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 16px;
+        line-height: 25px;
+        margin-right: 10px;
+        .mrg-5{
+            margin-right: 5px;
+        }
+    }
+    .right-text:hover{
+        color: #eee;
+    }
+}
