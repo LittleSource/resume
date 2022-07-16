@@ -1,5 +1,5 @@
 @import 'antd/dist/antd.css';
-body {
+#root {
   margin: 0;
   background-color: #eaeaea;
   font-family: 'Hiragino Sans GB','Helvetica Neue','PingFang SC','Microsoft YaHei','微软雅黑',Arial,sans-serif;
