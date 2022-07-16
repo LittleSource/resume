@@ -28,7 +28,7 @@ const Header: FC<Props> = (props: Props) => {
           俞旭源
           <div className="small">LittleSource</div>
         </div>
-        <div className="job">Golang后端开发</div>
+        <div className="job">前端工程师</div>
       </div>
       <div className="row person-info">
         <div>
