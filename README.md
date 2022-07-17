@@ -6,4 +6,4 @@
 - 2、启动： yarn dev 开启调试服务
 - 3、开发： 编辑 /src/ 文件
 
-![简历](https://github.com/LittleSource/resume-react/blob/master/resume.png?raw=true)
+![简历](https://raw.githubusercontent.com/LittleSource/resume-react/main/resume.png)
