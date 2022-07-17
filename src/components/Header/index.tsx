@@ -1,7 +1,7 @@
 import { FC, CSSProperties } from 'react';
 import { Layout } from 'antd';
 import {
-  FolderOpenFilled,
+  MailFilled,
   GithubOutlined,
   PhoneFilled,
   ChromeFilled,
@@ -16,6 +16,10 @@ const headerStyle: CSSProperties = {
   backgroundColor: '#01AAED',
   padding: '30px',
   color: '#FFF',
+};
+
+const iconStyle: CSSProperties = {
+  lineHeight: '25px',
 };
 
 interface Props {}
@@ -39,7 +43,7 @@ const Header: FC<Props> = (props: Props) => {
         <div>
           <a className="right-text" href="tel:17320285191">
             <div className="mrg-5">17320285191</div>
-            <PhoneFilled />
+            <PhoneFilled style={iconStyle} />
           </a>
           <a
             className="right-text"
@@ -47,11 +51,11 @@ const Header: FC<Props> = (props: Props) => {
             target="_blank"
           >
             <div className="mrg-5">blog.52ym.vip</div>
-            <ChromeFilled />
+            <ChromeFilled style={iconStyle} />
           </a>
           <a className="right-text" href="mailto:kmvip8@163.com">
             <div className="mrg-5">kmvip8@163.com</div>
-            <FolderOpenFilled />
+            <MailFilled style={iconStyle} />
           </a>
           <a
             className="right-text"
@@ -59,7 +63,7 @@ const Header: FC<Props> = (props: Props) => {
             target="_blank"
           >
             <div className="mrg-5">github.com/LittleSource</div>
-            <GithubOutlined />
+            <GithubOutlined style={iconStyle} />
           </a>
         </div>
       </div>
