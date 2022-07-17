@@ -1,5 +1,7 @@
 # 这是一份由React开发的简历
-![license](https://img.shields.io/github/license//LittleSource/resume-react)
+![OSCS](https://www.oscs1024.com/platform/badge/LittleSource/resume-react.svg)
+![LICENSE](https://img.shields.io/badge/LICENSE-GNU%20General%20Public-green)
+
 ## 技术栈 react+ts+vite
 
 - 1、安装依赖： yarn
