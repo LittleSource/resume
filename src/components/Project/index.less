@@ -1,25 +1,28 @@
-.project{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-content{
-      &-title{
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 120%;
-      }
-      &-desc{
-        width: 850px;
-      }
-    }
-    &-qrcode{
-      width: 80px;
-      height: 80px;
-    }
-    &-icon{
-        color: rgb(1, 170, 237);
-        font-size: 30px;
-        margin-right: 20px;
+.project {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 750px) {
+    &-content {
+      width: 80%;
     }
   }
+  &-content {
+    &-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 120%;
+    }
+  }
+  &-qrcode {
+    width: 80px;
+    height: 80px;
+  }
+
+  &-icon {
+    color: rgb(1, 170, 237);
+    font-size: 30px;
+    margin-right: 20px;
+  }
+}
