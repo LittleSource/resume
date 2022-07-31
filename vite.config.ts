@@ -10,6 +10,9 @@ export default defineConfig({
       '@/': `${srcPath}/`,
     },
   },
+  server: {
+    host: '0.0.0.0',
+  },
   css: {
     preprocessorOptions: {
       less: {},

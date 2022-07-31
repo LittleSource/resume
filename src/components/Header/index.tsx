@@ -18,11 +18,6 @@ const headerStyle: CSSProperties = {
   color: '#FFF',
 };
 
-const iconStyle: CSSProperties = {
-  lineHeight: '120%',
-  fontSize: '15px',
-};
-
 interface Props {}
 
 const Header: FC<Props> = (props: Props) => {
@@ -44,7 +39,7 @@ const Header: FC<Props> = (props: Props) => {
         <div>
           <a className="right-text" href="tel:17320285191">
             <div className="mrg-5">17320285191</div>
-            <PhoneFilled style={iconStyle} />
+            <PhoneFilled className="icon" />
           </a>
           <a
             className="right-text"
@@ -52,11 +47,11 @@ const Header: FC<Props> = (props: Props) => {
             target="_blank"
           >
             <div className="mrg-5">blog.52ym.vip</div>
-            <ChromeFilled style={iconStyle} />
+            <ChromeFilled className="icon" />
           </a>
           <a className="right-text" href="mailto:kmvip8@163.com">
             <div className="mrg-5">kmvip8@163.com</div>
-            <MailFilled style={iconStyle} />
+            <MailFilled className="icon" />
           </a>
           <a
             className="right-text"
@@ -64,7 +59,7 @@ const Header: FC<Props> = (props: Props) => {
             target="_blank"
           >
             <div className="mrg-5">github.com/LittleSource</div>
-            <GithubOutlined style={iconStyle} />
+            <GithubOutlined className="icon" />
           </a>
         </div>
       </div>

@@ -59,6 +59,7 @@ const App: FC = () => {
           </Content>
         </Layout>
       </div>
+      <div className="footer"></div>
     </div>
   );
 };

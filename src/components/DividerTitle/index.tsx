@@ -8,7 +8,7 @@ interface Props {
 const DividerTitle: FC<Props> = (props: Props) => {
   return (
     <div className="section-hd">
-      <h2 className="section-title">{props.title}</h2>
+      <h2 className="section-title text-xl">{props.title}</h2>
     </div>
   );
 };
