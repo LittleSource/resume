@@ -12,14 +12,15 @@ import './index.less';
 const LayoutHeader = Layout.Header;
 
 const headerStyle: CSSProperties = {
-  height: '245px',
+  height: 'auto',
   backgroundColor: '#01AAED',
   padding: '30px',
   color: '#FFF',
 };
 
 const iconStyle: CSSProperties = {
-  lineHeight: '25px',
+  lineHeight: '120%',
+  fontSize: '15px',
 };
 
 interface Props {}

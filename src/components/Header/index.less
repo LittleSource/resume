@@ -1,51 +1,60 @@
-.row{
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-row {
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+  &::after {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    content: '';
+    border-bottom: 2px solid #01a3e3;
+  }
+  .name {
+    font-size: 45px;
+    line-height: 120%;
+
+    font-weight: 500;
+    letter-spacing: 5px;
+    .small {
+      padding-left: 10px;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+  }
+  .job {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: normal;
+  }
+}
+
+.person-info {
+  margin-top: 30px;
+  justify-content: space-between;
+  font-weight: 500;
+  .person-info-text {
+    font-size: 16px;
+    line-height: 200%;
+  }
+  .right-text {
+    color: #fff;
     display: flex;
     flex-direction: row;
-}
-
-
-.first-row{
-    justify-content: space-between;
-    border-bottom: 2px solid #01a3e3;
-    .name {
-        font-size: 45px;
-        font-weight: 500;
-        letter-spacing: 5px;
-        .small {
-            padding-left: 10px;
-            font-size: 24px;
-            font-weight: 400;
-            letter-spacing: 0;
-        }
+    justify-content: flex-end;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 10px;
+    .mrg-5 {
+      margin-right: 5px;
     }
-}
-
-.job{
-    font-size: 24px;
-    font-weight: normal;
-}
-
-.person-info{
-    justify-content: space-between;
-    margin-top: 10px;
-    font-weight: 500;
-    .person-info-text{
-        font-size: 16px;
-        line-height: 35px;
-    }
-    .right-text{
-        color: #fff;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        font-size: 16px;
-        line-height: 25px;
-        margin-right: 10px;
-        .mrg-5{
-            margin-right: 5px;
-        }
-    }
-    .right-text:hover{
-        color: #eee;
-    }
+  }
+  .right-text:hover {
+    color: #eee;
+  }
 }

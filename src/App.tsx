@@ -32,13 +32,13 @@ const App: FC = () => {
           <Content style={contentStyle}>
             <DividerTitle title="专业技能" />
             <div className="skill">
-              {SkillData.map((item) => {
+              {SkillData.map((item, index) => {
                 return (
-                  <div className="skill-box">
+                  <div className="skill-box" key={index}>
                     <div className="title">{item.title}</div>
-                    {item.item.map((text) => {
+                    {item.item.map((text, index) => {
                       return (
-                        <div className="desc">
+                        <div className="desc" key={index}>
                           <Badge color="#01AAED" />
                           {text}
                         </div>

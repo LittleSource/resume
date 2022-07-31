@@ -13,9 +13,9 @@ export interface WorkHistoryItem {
 const WorkHistory: FC<Props> = (props: Props) => {
   return (
     <>
-      {props.data.map((company) => {
+      {props.data.map((company, index) => {
         return (
-          <div className="work">
+          <div className="work" key={index}>
             <div className="work-box">
               <div className="work-title">
                 <div className="time">{company.time}</div>
@@ -23,8 +23,8 @@ const WorkHistory: FC<Props> = (props: Props) => {
                 <div className="three-title">{company.job}</div>
               </div>
               <div className="desc">
-                {company.desc.map((item) => {
-                  return <div>{item}</div>;
+                {company.desc.map((item, index) => {
+                  return <div key={index}>{item}</div>;
                 })}
               </div>
             </div>
