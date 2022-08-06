@@ -30,11 +30,11 @@ const Header: FC<BasicInfoProps> = (props) => {
       <div className="first-row flex justify-between items-end relative after:border-blue-900">
         <div className="text-5xl flex items-center">
           {props.name}
-          <div className="ml-1 text-2xl hidden md:block">{props.enName}</div>
+          <div className="ml-1 text-2xl hidden sm:block">{props.enName}</div>
         </div>
         <div className="text-2xl">{props.intended}</div>
       </div>
-      <div className="mt-5 flex flex-col 2xl:flex-row justify-between">
+      <div className="mt-5 flex flex-col sm:flex-row justify-between">
         <div className="flex flex-col justify-around">
           <div className="text-lg">
             {props.gender} / {props.birthday}
@@ -45,32 +45,29 @@ const Header: FC<BasicInfoProps> = (props) => {
           <div className="text-lg">{props.educationalBackground}</div>
         </div>
         <div>
-          <a className="flex 2xl:flex-row-reverse" href={`tel${props.phone}`}>
+          <a className="flex sm:flex-row-reverse" href={`tel${props.phone}`}>
             <PhoneFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">{props.phone}</div>
+            <div className="sm:mr-1 ml-1 text-lg">{props.phone}</div>
           </a>
           <a
-            className="flex 2xl:flex-row-reverse"
+            className="flex sm:flex-row-reverse"
             href={props.blogLink}
             target="_blank"
           >
             <ChromeFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">{props.blogName}</div>
+            <div className="sm:mr-1 ml-1 text-lg">{props.blogName}</div>
           </a>
-          <a
-            className="flex 2xl:flex-row-reverse"
-            href={`mailto:${props.mail}`}
-          >
+          <a className="flex sm:flex-row-reverse" href={`mailto:${props.mail}`}>
             <MailFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">{props.mail}</div>
+            <div className="sm:mr-1 ml-1 text-lg">{props.mail}</div>
           </a>
           <a
-            className="flex 2xl:flex-row-reverse"
+            className="flex sm:flex-row-reverse"
             href={props.github}
             target="_blank"
           >
             <GithubOutlined className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">
+            <div className="sm:mr-1 ml-1 text-lg">
               {props.github.substring(8)}
             </div>
           </a>

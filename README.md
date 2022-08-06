@@ -16,6 +16,9 @@ yarn
 # 启动服务
 yarn dev 
 ```
+## 转换为PDF
+
+在浏览器 > 按Ctrl/command + P > 打印 > 目标另存为PDF > 更多设置无边距 > 即可导出
 
 ## 主题修改
 

@@ -15,7 +15,7 @@ const WorkHistory: FC<Props> = (props: Props) => {
       {props.data.map((company, index) => {
         return (
           <div className="mt-2" key={index}>
-            <div className="flex flex-col 2xl:flex-row justify-around text-base font-semibold font-title">
+            <div className="flex flex-col sm:flex-row justify-around text-base font-semibold font-title">
               <div>{company.time}</div>
               <div>{company.companyName}</div>
               <div>{company.job}</div>
