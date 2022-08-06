@@ -1,5 +1,4 @@
-import { FC, CSSProperties } from 'react';
-import { Layout } from 'antd';
+import { FC } from 'react';
 import {
   MailFilled,
   GithubOutlined,
@@ -9,20 +8,12 @@ import {
 
 import './index.less';
 
-const LayoutHeader = Layout.Header;
-
-const headerStyle: CSSProperties = {
-  height: 'auto',
-  padding: '30px',
-  color: '#FFF',
-};
-
 interface Props {}
 
 const Header: FC<Props> = (props: Props) => {
   return (
-    <LayoutHeader style={headerStyle} className="bg-blue">
-      <div className="first-row flex justify-between items-end relative">
+    <div className="p-7 text-white bg-blue-100">
+      <div className="first-row flex justify-between items-end relative after:border-blue-900">
         <div className="text-5xl flex items-center">
           俞旭源
           <div className="ml-1 text-2xl hidden md:block">LittleSource</div>
@@ -62,7 +53,7 @@ const Header: FC<Props> = (props: Props) => {
           </a>
         </div>
       </div>
-    </LayoutHeader>
+    </div>
   );
 };
 

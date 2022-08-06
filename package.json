@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "antd": "^4.21.0",
     "autoprefixer": "^10.4.8",
     "path": "^0.12.7",
     "postcss": "^8.4.14",

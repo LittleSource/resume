@@ -6,7 +6,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      blue:'#01aaed'
+      blue:{
+        100:'#01aaed',
+        200:'#17bbff',
+        900:'#01a3e3'
+      },
+      white:'#FFFFFF'
     },
     fontFamily: {
       'title': ['"PingFang SC"', '"Microsoft YaHei"', '"Hiragino Sans GB W3"'],
