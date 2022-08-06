@@ -8,48 +8,71 @@ import {
 
 import './index.less';
 
-interface Props {}
+export interface BasicInfoProps {
+  name: string;
+  enName: string;
+  intended: string;
+  gender: string;
+  birthday: string;
+  universityName: string;
+  universityMajor: string;
+  educationalBackground: string;
+  phone: string;
+  mail: string;
+  blogName: string;
+  blogLink: string;
+  github: string;
+}
 
-const Header: FC<Props> = (props: Props) => {
+const Header: FC<BasicInfoProps> = (props) => {
   return (
     <div className="p-7 text-white bg-blue-100">
       <div className="first-row flex justify-between items-end relative after:border-blue-900">
         <div className="text-5xl flex items-center">
-          俞旭源
-          <div className="ml-1 text-2xl hidden md:block">LittleSource</div>
+          {props.name}
+          <div className="ml-1 text-2xl hidden md:block">{props.enName}</div>
         </div>
-        <div className="text-2xl">前端工程师</div>
+        <div className="text-2xl">{props.intended}</div>
       </div>
       <div className="mt-5 flex flex-col 2xl:flex-row justify-between">
         <div className="flex flex-col justify-around">
-          <div className="text-lg">男 / 1998.09</div>
-          <div className="text-lg">天津农学院 · 计算机科学与技术</div>
-          <div className="text-lg">本科 · 2022年毕业</div>
+          <div className="text-lg">
+            {props.gender} / {props.birthday}
+          </div>
+          <div className="text-lg">
+            {props.universityName} · {props.universityMajor}
+          </div>
+          <div className="text-lg">{props.educationalBackground}</div>
         </div>
         <div>
-          <a className="flex 2xl:flex-row-reverse" href="tel:17320285191">
+          <a className="flex 2xl:flex-row-reverse" href={`tel${props.phone}`}>
             <PhoneFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">17320285191</div>
+            <div className="2xl:mr-1 ml-1 text-lg">{props.phone}</div>
           </a>
           <a
             className="flex 2xl:flex-row-reverse"
-            href="https://juejin.cn/user/2840793779030478"
+            href={props.blogLink}
             target="_blank"
           >
             <ChromeFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">blog.52ym.vip</div>
-          </a>
-          <a className="flex 2xl:flex-row-reverse" href="mailto:kmvip8@163.com">
-            <MailFilled className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">kmvip8@163.com</div>
+            <div className="2xl:mr-1 ml-1 text-lg">{props.blogName}</div>
           </a>
           <a
             className="flex 2xl:flex-row-reverse"
-            href="https://github.com/LittleSource"
+            href={`mailto:${props.mail}`}
+          >
+            <MailFilled className="text-lg" />
+            <div className="2xl:mr-1 ml-1 text-lg">{props.mail}</div>
+          </a>
+          <a
+            className="flex 2xl:flex-row-reverse"
+            href={props.github}
             target="_blank"
           >
             <GithubOutlined className="text-lg" />
-            <div className="2xl:mr-1 ml-1 text-lg">github.com/LittleSource</div>
+            <div className="2xl:mr-1 ml-1 text-lg">
+              {props.github.substring(8)}
+            </div>
           </a>
         </div>
       </div>

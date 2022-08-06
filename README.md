@@ -4,6 +4,10 @@
 
 ## 技术栈 react+ts+vite
 
+> [在线体验](https://resume.52ym.vip/)
+
+<hr>
+
 ## 启动方式
 
 ```shell
@@ -25,8 +29,8 @@ module.exports = {
         colors: {
             blue:{
                 100:'#01aaed',// 顶部背景色
-                200:'#17bbff',// 标题下边框颜色
-                900:'#01a3e3' // 名字下边框颜色
+                200:'#17bbff',// 标题下划线颜色
+                900:'#01a3e3' // 姓名下划线颜色
             },
             // ...
         },
@@ -35,5 +39,7 @@ module.exports = {
     // ...
 }
 ```
+
+## 预览图
 
 ![简历](https://raw.githubusercontent.com/LittleSource/resume-react/main/resume.png)
