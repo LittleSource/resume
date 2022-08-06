@@ -9,7 +9,7 @@ export interface ProjectProps {
 
 const Project: FC<ProjectProps> = (props: ProjectProps) => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center mt-2 2xl:mt-1">
       <div className="2xl:w-10/12">
         <div className="text-base font-semibold font-title">{props.title}</div>
         <div className="text-base">{props.desc}</div>
