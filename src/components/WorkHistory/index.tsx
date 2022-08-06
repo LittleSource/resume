@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import './index.less';
 interface Props {
   data: WorkHistoryItem[];
 }
@@ -15,18 +14,16 @@ const WorkHistory: FC<Props> = (props: Props) => {
     <>
       {props.data.map((company, index) => {
         return (
-          <div className="work" key={index}>
-            <div className="work-box">
-              <div className="work-title">
-                <div className="time">{company.time}</div>
-                <div className="company">{company.companyName}</div>
-                <div className="three-title">{company.job}</div>
-              </div>
-              <div className="desc">
-                {company.desc.map((item, index) => {
-                  return <div key={index}>{item}</div>;
-                })}
-              </div>
+          <div className="mt-2" key={index}>
+            <div className="flex flex-col 2xl:flex-row justify-around text-base font-semibold font-title">
+              <div>{company.time}</div>
+              <div>{company.companyName}</div>
+              <div>{company.job}</div>
+            </div>
+            <div className="text-base mt-1">
+              {company.desc.map((item, index) => {
+                return <div key={index}>{item}</div>;
+              })}
             </div>
           </div>
         );

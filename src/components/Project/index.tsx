@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { GithubOutlined } from '@ant-design/icons';
-import './index.less';
+//import { GithubOutlined } from '@ant-design/icons';
 
 export interface ProjectProps {
   title: string;
@@ -10,14 +9,18 @@ export interface ProjectProps {
 
 const Project: FC<ProjectProps> = (props: ProjectProps) => {
   return (
-    <div className="project">
-      <div className="project-content">
-        <div className="project-content-title">{props.title}</div>
-        <div className="project-content-desc">{props.desc}</div>
+    <div className="flex justify-between items-center">
+      <div className="2xl:w-10/12">
+        <div className="text-base font-semibold font-title">{props.title}</div>
+        <div className="text-base">{props.desc}</div>
       </div>
       {
         props?.imgUrl && (
-          <img className="project-qrcode" src={props.imgUrl} alt="小程序码" />
+          <img
+            className="flex-shrink h-24 w-24"
+            src={props.imgUrl}
+            alt="小程序码"
+          />
         )
         //   (
         //     <GithubOutlined className="project-icon" />

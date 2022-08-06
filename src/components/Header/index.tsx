@@ -13,7 +13,6 @@ const LayoutHeader = Layout.Header;
 
 const headerStyle: CSSProperties = {
   height: 'auto',
-  backgroundColor: '#01AAED',
   padding: '30px',
   color: '#FFF',
 };
@@ -22,44 +21,44 @@ interface Props {}
 
 const Header: FC<Props> = (props: Props) => {
   return (
-    <LayoutHeader style={headerStyle}>
-      <div className="row first-row">
-        <div className="name row">
+    <LayoutHeader style={headerStyle} className="bg-blue">
+      <div className="first-row flex justify-between items-end relative">
+        <div className="text-5xl flex items-center">
           俞旭源
-          <div className="small">LittleSource</div>
+          <div className="ml-1 text-2xl hidden md:block">LittleSource</div>
         </div>
-        <div className="job">前端工程师</div>
+        <div className="text-2xl">前端工程师</div>
       </div>
-      <div className="row person-info">
-        <div>
-          <div className="person-info-text">男 / 1998.09</div>
-          <div className="person-info-text">天津农学院 · 计算机科学与技术</div>
-          <div className="person-info-text">本科 · 2022年毕业</div>
+      <div className="mt-5 flex flex-col 2xl:flex-row justify-between">
+        <div className="flex flex-col justify-around">
+          <div className="text-lg">男 / 1998.09</div>
+          <div className="text-lg">天津农学院 · 计算机科学与技术</div>
+          <div className="text-lg">本科 · 2022年毕业</div>
         </div>
         <div>
-          <a className="right-text" href="tel:17320285191">
-            <div className="mrg-5">17320285191</div>
-            <PhoneFilled className="icon" />
+          <a className="flex 2xl:flex-row-reverse" href="tel:17320285191">
+            <PhoneFilled className="text-lg" />
+            <div className="2xl:mr-1 ml-1 text-lg">17320285191</div>
           </a>
           <a
-            className="right-text"
+            className="flex 2xl:flex-row-reverse"
             href="https://juejin.cn/user/2840793779030478"
             target="_blank"
           >
-            <div className="mrg-5">blog.52ym.vip</div>
-            <ChromeFilled className="icon" />
+            <ChromeFilled className="text-lg" />
+            <div className="2xl:mr-1 ml-1 text-lg">blog.52ym.vip</div>
           </a>
-          <a className="right-text" href="mailto:kmvip8@163.com">
-            <div className="mrg-5">kmvip8@163.com</div>
-            <MailFilled className="icon" />
+          <a className="flex 2xl:flex-row-reverse" href="mailto:kmvip8@163.com">
+            <MailFilled className="text-lg" />
+            <div className="2xl:mr-1 ml-1 text-lg">kmvip8@163.com</div>
           </a>
           <a
-            className="right-text"
+            className="flex 2xl:flex-row-reverse"
             href="https://github.com/LittleSource"
             target="_blank"
           >
-            <div className="mrg-5">github.com/LittleSource</div>
-            <GithubOutlined className="icon" />
+            <GithubOutlined className="text-lg" />
+            <div className="2xl:mr-1 ml-1 text-lg">github.com/LittleSource</div>
           </a>
         </div>
       </div>

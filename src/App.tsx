@@ -26,19 +26,21 @@ const contentStyle: CSSProperties = {
 const App: FC = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container font-body">
         <Layout>
           <Header />
           <Content style={contentStyle}>
             <DividerTitle title="专业技能" />
-            <div className="skill">
+            <div className="flex flex-col">
               {SkillData.map((item, index) => {
                 return (
-                  <div className="skill-box" key={index}>
-                    <div className="title">{item.title}</div>
+                  <div className="mt-1 mb-1" key={index}>
+                    <div className="text-base font-semibold font-title">
+                      {item.title}
+                    </div>
                     {item.item.map((text, index) => {
                       return (
-                        <div className="desc" key={index}>
+                        <div className="text-base" key={index}>
                           <Badge color="#01AAED" />
                           {text}
                         </div>
@@ -59,7 +61,7 @@ const App: FC = () => {
           </Content>
         </Layout>
       </div>
-      <div className="footer"></div>
+      <div className="2xl:h-10"></div>
     </div>
   );
 };

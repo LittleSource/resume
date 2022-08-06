@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import './index.less';
 
 interface Props {
   title: string;
@@ -7,8 +6,8 @@ interface Props {
 
 const DividerTitle: FC<Props> = (props: Props) => {
   return (
-    <div className="section-hd">
-      <h2 className="section-title text-xl">{props.title}</h2>
+    <div className="h-8 w-full mt-1 border-b-2 border-solid border-blue">
+      <h2 className="font-title font-semibold text-xl">{props.title}</h2>
     </div>
   );
 };

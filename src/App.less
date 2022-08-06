@@ -1,5 +1,6 @@
+@color-main: #01aaed; // 主色
 .container {
-  width: 1024px;
+  width: 50vw;
   margin: 0px auto;
   background-color: #fff;
   border-radius: 5px;
@@ -16,108 +17,16 @@
       transform: translate3d(0, 0, 0);
     }
   }
-}
-.footer {
-  height: 20px;
-}
-@media screen and (max-width: 800px) {
-  .container {
-    width: 100vw;
-    -webkit-text-size-adjust: 100%;
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100vw;
+      -webkit-text-size-adjust: 100%;
+    }
   }
-  .section-hd .section-title {
-    font-size: 60px;
-  }
-  .skill .skill-box .title {
-    font-size: 50px;
-  }
-  .skill .skill-box .desc {
-    font-size: 40px;
-  }
-  .work-title {
-    font-size: 40px;
-  }
-  .work .work-box .desc {
-    font-size: 40px;
-  }
-  .project-content-desc {
-    width: 90%;
-  }
-  .project-qrcode {
-    width: 15%;
-    height: 15%;
-  }
-  .project-content-title {
-    font-size: 40px;
-  }
-  .project-content-desc {
-    font-size: 40px;
-  }
-  .first-row .name {
-    font-size: 100px;
-  }
-  .footer {
-    height: 0px;
-  }
-}
-
-@media print {
-  .container {
-    width: 100vw;
-    -webkit-text-size-adjust: 100%;
-  }
-  .section-hd .section-title {
-    font-size: 60px;
-  }
-  .skill .skill-box .title {
-    font-size: 50px;
-  }
-  .skill .skill-box .desc {
-    font-size: 40px;
-  }
-  .work-title {
-    font-size: 40px;
-  }
-  .work .work-box .desc {
-    font-size: 40px;
-  }
-  .project-content-desc {
-    width: 90%;
-  }
-  .project-qrcode {
-    width: 15%;
-    height: 15%;
-  }
-  .project-content-title {
-    font-size: 40px;
-  }
-  .project-content-desc {
-    font-size: 40px;
-  }
-  .first-row .name {
-    font-size: 100px;
-  }
-  .footer {
-    height: 0px;
-  }
-}
-
-.skill {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  .skill-box {
-    width: 100%;
-  }
-  .title {
-    margin: 10px 0px 5px 0px;
-    color: #555;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 120%;
-  }
-  .desc {
-    font-size: 14px;
-    letter-spacing: 1px;
+  @media print {
+    .container {
+      width: 100vw;
+      -webkit-text-size-adjust: 100%;
+    }
   }
 }
