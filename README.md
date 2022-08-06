@@ -4,8 +4,36 @@
 
 ## 技术栈 react+ts+vite
 
-- 1、安装依赖： yarn
-- 2、启动： yarn dev 开启调试服务
-- 3、开发： 编辑 /src/ 文件
+## 启动方式
+
+```shell
+# 安装依赖
+yarn
+# 启动服务
+yarn dev 
+```
+
+## 主题修改
+
+修改根目录下的tailwind.config.js配置文件
+
+```js
+// tailwind.config.js
+module.exports = {
+    // ...
+    theme: {
+        colors: {
+            blue:{
+                100:'#01aaed',// 顶部背景色
+                200:'#17bbff',// 标题下边框颜色
+                900:'#01a3e3' // 名字下边框颜色
+            },
+            // ...
+        },
+        // ...
+    }
+    // ...
+}
+```
 
 ![简历](https://raw.githubusercontent.com/LittleSource/resume-react/main/resume.png)
