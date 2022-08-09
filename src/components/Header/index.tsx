@@ -45,28 +45,29 @@ const Header: FC<BasicInfoProps> = (props) => {
           <div className="text-lg">{props.educationalBackground}</div>
         </div>
         <div>
-          <a className="flex sm:flex-row-reverse" href={`tel${props.phone}`}>
-            <PhoneFilled className="text-lg" />
+          <a className="flex sm:flex-row-reverse items-center" href={`tel${props.phone}`}>
+            <div className="text-xl i-mdi:cellphone-charging" />
+
             <div className="sm:mr-1 ml-1 text-lg">{props.phone}</div>
           </a>
           <a
-            className="flex sm:flex-row-reverse"
+            className="flex sm:flex-row-reverse items-center"
             href={props.blogLink}
             target="_blank"
           >
-            <ChromeFilled className="text-lg" />
+            <div className="text-xl i-mdi:microsoft-edge-legacy" />
             <div className="sm:mr-1 ml-1 text-lg">{props.blogName}</div>
           </a>
-          <a className="flex sm:flex-row-reverse" href={`mailto:${props.mail}`}>
-            <MailFilled className="text-lg" />
+          <a className="flex sm:flex-row-reverse items-center" href={`mailto:${props.mail}`}>
+            <div className="text-xl i-mdi:email-arrow-right" />
             <div className="sm:mr-1 ml-1 text-lg">{props.mail}</div>
           </a>
           <a
-            className="flex sm:flex-row-reverse"
+            className="flex sm:flex-row-reverse items-center"
             href={props.github}
             target="_blank"
           >
-            <GithubOutlined className="text-lg" />
+            <div className="text-xl i-mdi:github" />
             <div className="sm:mr-1 ml-1 text-lg">
               {props.github.substring(8)}
             </div>

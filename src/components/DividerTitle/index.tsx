@@ -6,8 +6,8 @@ interface Props {
 
 const DividerTitle: FC<Props> = (props: Props) => {
   return (
-    <div className="h-8 w-full mt-1 border-b-2 border-solid border-blue-200">
-      <h2 className="font-title font-semibold text-xl">{props.title}</h2>
+    <div className="h-8 w-full mt-1 border-b border-blue-200">
+      <div className="font-title font-semibold text-xl">{props.title}</div>
     </div>
   );
 };

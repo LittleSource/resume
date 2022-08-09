@@ -13,9 +13,9 @@ import { MuZhiForUser, MuZhiForWorker, Projects } from './data/project';
 
 const App: FC = () => {
   return (
-    <div className="container font-body">
+    <div className="cistern font-body">
       <Header {...basicInfo} />
-      <div className="px-6 pt-3 pb-6 bg-white">
+      <div className="px-6 pt-1 pb-6 bg-white">
         <DividerTitle title="专业技能" />
         <Skill data={SkillData} />
         <DividerTitle title="工作经历" />

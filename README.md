@@ -22,11 +22,12 @@ yarn dev
 
 ## 主题修改
 
-修改根目录下的tailwind.config.js配置文件
+修改根目录下的vite.config.js配置文件
 
 ```js
-// tailwind.config.js
-module.exports = {
+// vite.config.js
+export default defineConfig({
+  plugins: [
     // ...
     theme: {
         colors: {
@@ -40,6 +41,7 @@ module.exports = {
         // ...
     }
     // ...
+  ]
 }
 ```
 
