@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .kill-ie {
   margin: 0;
   padding: 0.5em 0;
@@ -14,16 +10,16 @@
 }
 body {
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
   background-color: #eee;
   padding: 20px 0px;
   overflow: auto;
   @media screen and (max-width: 950px) {
-    padding: 0px;
+    padding: 0;
+    margin: 0;
   }
   @media print and (max-width: 950px) {
-    padding: 0px;
+    padding: 0;
+    margin: 0;
   }
 }
 #root {
