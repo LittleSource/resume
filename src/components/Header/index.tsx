@@ -1,11 +1,4 @@
 import { FC } from 'react';
-import {
-  MailFilled,
-  GithubOutlined,
-  PhoneFilled,
-  ChromeFilled,
-} from '@ant-design/icons';
-
 import './index.less';
 
 export interface BasicInfoProps {
