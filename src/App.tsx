@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import DividerTitle from '@/components/DividerTitle';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer'
 import Skill from '@/components/Skill';
 import WorkHistory from '@/components/WorkHistory';
 import Project from '@/components/Project';
@@ -13,20 +14,23 @@ import { MuZhiForUser, MuZhiForWorker, Projects } from './data/project';
 
 const App: FC = () => {
   return (
-    <div className="cistern font-body">
-      <Header {...basicInfo} />
-      <div className="px-6 pt-1 pb-6 bg-white">
-        <DividerTitle title="专业技能" />
-        <Skill data={SkillData} />
-        <DividerTitle title="工作经历" />
-        <WorkHistory data={workData} />
-        <Project {...MuZhiForUser} />
-        <Project {...MuZhiForWorker} />
-        <DividerTitle title="作品介绍" />
-        {Projects.map((item) => (
-          <Project {...item} />
-        ))}
+    <div>
+      <div className="cistern font-body">
+        <Header {...basicInfo} />
+        <div className="px-6 pt-1 pb-6 bg-white">
+          <DividerTitle title="专业技能" />
+          <Skill data={SkillData} />
+          <DividerTitle title="工作经历" />
+          <WorkHistory data={workData} />
+          <Project {...MuZhiForUser} />
+          <Project {...MuZhiForWorker} />
+          <DividerTitle title="作品介绍" />
+          {Projects.map((item) => (
+            <Project {...item} />
+          ))}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

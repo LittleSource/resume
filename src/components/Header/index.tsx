@@ -37,7 +37,7 @@ const Header: FC<BasicInfoProps> = (props) => {
           </div>
           <div className="text-lg">{props.educationalBackground}</div>
         </div>
-        <div>
+        <div className='right-line'>
           <a className="flex sm:flex-row-reverse items-center" href={`tel:${props.phone}`}>
             <div className="text-xl i-mdi:cellphone-charging" />
 
