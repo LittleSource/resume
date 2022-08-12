@@ -19,7 +19,7 @@ export interface BasicInfoProps {
 
 const Header: FC<BasicInfoProps> = (props) => {
   return (
-    <div className="p-7 text-white bg-blue-100">
+    <div className="px-6 pt-6 pb-3 text-white bg-blue-100">
       <div className="first-row flex justify-between items-end relative after:border-blue-900">
         <div className="text-5xl flex items-center">
           {props.name}

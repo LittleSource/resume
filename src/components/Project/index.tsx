@@ -17,7 +17,7 @@ const Project: FC<ProjectProps> = (props: ProjectProps) => {
       {
         props?.imgUrl && (
           <img
-            className="flex-shrink h-24 w-24"
+            className="flex-shrink h-20 w-20"
             src={props.imgUrl}
             alt="小程序码"
           />

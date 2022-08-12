@@ -45,6 +45,9 @@ export default defineConfig({
             'sans-serif',
           ],
         },
+        breakpoints: {
+          sm: '520px',
+        },
       },
     }),
   ],
