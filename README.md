@@ -12,6 +12,8 @@
 ## 启动方式
 
 ```shell
+# 如果没安装yarn，先安装
+npm install yarn -g
 # 安装依赖
 yarn
 # 启动服务
@@ -20,7 +22,7 @@ yarn dev
 
 ## 转换为PDF
 
-在浏览器 > 按Ctrl/command + P > 打印 > 目标另存为PDF > 更多设置无边距 > 即可导出
+在浏览器 > 按`Ctrl/command + P` > 打印 > 目标另存为PDF > 更多设置`无边距` > 勾选`背景颜色` > 即可导出PDF
 
 ## 主题修改
 
