@@ -1,13 +1,14 @@
 import { FC } from 'react';
 import DividerTitle from '@/components/DividerTitle';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer'
+import Footer from '@/components/Footer';
 import Skill from '@/components/Skill';
 import WorkHistory from '@/components/WorkHistory';
 import Project from '@/components/Project';
 import './App.less';
 
 import basicInfo from './data/basicInfo';
+import { selfEvaluation } from './data/basicInfo';
 import SkillData from './data/skill';
 import workData from './data/work';
 import { MuZhiForUser, MuZhiForWorker, Projects } from './data/project';
@@ -28,6 +29,8 @@ const App: FC = () => {
           {Projects.map((item) => (
             <Project {...item} />
           ))}
+          <DividerTitle title="自我评价" />
+          <div className="mt-1">{selfEvaluation}</div>
         </div>
       </div>
       <Footer />
