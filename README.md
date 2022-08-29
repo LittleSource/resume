@@ -38,25 +38,17 @@ yarn dev
 
 ## 主题修改
 
-修改根目录下的vite.config.js配置文件
+修改根目录下的theme.js配置文件
 
 ```js
-// vite.config.js
-export default defineConfig({
-  plugins: [
-    // ...
-    theme: {
-        colors: {
-            blue:{
-                100:'#01aaed',// 顶部背景色
-                200:'#17bbff',// 标题下划线颜色
-                900:'#01a3e3' // 姓名下划线颜色
-            },
-            // ...
-        },
-        // ...
-    }
-    // ...
-  ]
+// theme.js
+colors: {
+  blue:{
+      100:'#01aaed', // 顶部背景色
+      200:'#17bbff', // 标题下划线颜色
+      900:'#01a3e3'  // 姓名下划线颜色
+  },
+// ...
 }
+// ...
 ```
