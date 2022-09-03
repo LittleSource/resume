@@ -1,0 +1,31 @@
+.cistern {
+  width: 58vw;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #c0c0c0;
+  overflow: hidden;
+  animation: fadeUp 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @media screen and (max-width: 950px) {
+    & {
+      width: 100vw;
+      border-radius: 0;
+    }
+  }
+  @media print and (max-width: 950px) {
+    & {
+      width: 100vw;
+      border-radius: 0;
+    }
+  }
+}
