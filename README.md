@@ -1,6 +1,6 @@
 # 这是一份由React开发的简历
 
-![OSCS](https://www.oscs1024.com/platform/badge/LittleSource/resume-react.svg)
+![OSCS](https://www.oscs1024.com/platform/badge/LittleSource/resume.svg)
 ![LICENSE](https://img.shields.io/badge/LICENSE-GNU%20General%20Public-green)
 
 ## 🪶Features
@@ -15,9 +15,9 @@
 
 ## 👋预览
 
-❤️‍🔥[在线体验](https://resume.52ym.vip/)
+❤️‍🔥[在线体验](https:///)
 
-![简历](https://raw.githubusercontent.com/LittleSource/resume-react/main/resume.png)
+![简历](https://raw.githubusercontent.com/LittleSource/resume/main/resume.png)
 
 ## 🏃启动方式
 
