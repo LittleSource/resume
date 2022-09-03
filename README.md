@@ -13,11 +13,7 @@
 
 - 👁️响应式设计
 
-## 👋预览
-
-❤️‍🔥[在线体验](https:///)
-
-![简历](https://raw.githubusercontent.com/LittleSource/resume/main/resume.png)
+❤️‍🔥[在线体验](https://resume.52ym.vip/)
 
 ## 🏃启动方式
 
@@ -52,3 +48,11 @@ colors: {
 }
 // ...
 ```
+
+## Web端
+
+![简历](https://raw.githubusercontent.com/LittleSource/resume/main/resume.png)
+
+## 移动端
+
+![简历phone](https://raw.githubusercontent.com/LittleSource/resume/main/resume-phone.png)
