@@ -11,7 +11,7 @@ const basicInfo: BasicInfoProps = {
   educationalBackground: '本科 · 2020年毕业',
   phone: '17320280000',
   mail: 'kmvip8@163.com',
-  blogName: 'blog.52ym.vip',
+  blogName: 'b.52ym.vip',
   blogLink: 'https://juejin.cn/user/2840793779030478',
   github: 'https://github.com/LittleSource',
 };
