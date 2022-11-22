@@ -11,7 +11,7 @@ import basicInfo from './data/basicInfo';
 import { selfEvaluation } from './data/basicInfo';
 import SkillData from './data/skill';
 import workData from './data/work';
-import { MuZhiForUser, MuZhiForWorker, Projects } from './data/project';
+import { MuZhiForUser, Projects } from './data/project';
 
 const App: FC = () => {
   return (
@@ -24,7 +24,6 @@ const App: FC = () => {
           <DividerTitle title="工作经历" />
           <WorkHistory data={workData} />
           <Project {...MuZhiForUser} />
-          <Project {...MuZhiForWorker} />
           <DividerTitle title="作品介绍" />
           {Projects.map((item) => (
             <Project {...item} />
