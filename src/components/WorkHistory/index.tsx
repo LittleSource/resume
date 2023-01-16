@@ -9,6 +9,7 @@ export interface WorkHistoryItem {
   job: string;
   jobTag?: string;
   desc: string[];
+  imgUrl?: string;
 }
 const WorkHistory: FC<Props> = (props: Props) => {
   return (
@@ -16,7 +17,7 @@ const WorkHistory: FC<Props> = (props: Props) => {
       {props.data.map((company, index) => {
         return (
           <div className="mt-2" key={index}>
-            <div className="flex flex-col sm:flex-row justify-around text-base font-semibold font-title">
+            <div className="flex flex-col sm:flex-row justify-between text-base font-semibold font-title">
               <div>{company.time}</div>
               <div>{company.companyName}</div>
               <div>
@@ -28,10 +29,19 @@ const WorkHistory: FC<Props> = (props: Props) => {
                 )}
               </div>
             </div>
-            <div className="text-base mt-1">
-              {company.desc.map((item, index) => {
-                return <div key={index}>{item}</div>;
-              })}
+            <div className='flex justify-between'>
+              <div className="text-base mt-1">
+                {company.desc.map((item, index) => {
+                  return <div key={index} dangerouslySetInnerHTML={{ __html: item }}></div>;
+                })}
+              </div>
+              {company?.imgUrl && (
+                <img
+                  className="flex-shrink h-20 w-20 pt-2"
+                  src={company.imgUrl}
+                  alt="公司图片"
+                />
+              )}
             </div>
           </div>
         );
