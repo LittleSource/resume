@@ -17,7 +17,7 @@
 
 ❤️‍🔥[在线体验](https://resume.52ym.vip/)
 
-![简历](https://raw.githubusercontent.com/LittleSource/resume-react/main/resume.png)
+![简历](https://raw.githubusercontent.com/LittleSource/resume/main/resume.png)
 
 ## 🏃启动方式
 

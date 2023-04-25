@@ -8,28 +8,28 @@ import theme from './theme.js';
 const srcPath = resolve(__dirname, 'src');
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    Unocss({
-      presets: [
-        presetWind(),
-        UnocssIcons({
-          // 其他选项
-          prefix: 'i-',
-          extraProperties: {
-            display: 'inline-block',
-          },
-        }),
-      ],
-      theme,
-    }),
-  ],
-  resolve: {
-    alias: {
-      '@/': `${srcPath}/`,
-    },
-  },
-  server: {
-    host: '0.0.0.0',
-  },
+	plugins: [
+		react(),
+		Unocss({
+			presets: [
+				presetWind(),
+				UnocssIcons({
+					// 其他选项
+					prefix: 'i-',
+					extraProperties: {
+						display: 'inline-block',
+					},
+				}),
+			],
+			theme,
+		}),
+	],
+	resolve: {
+		alias: {
+			'@/': `${srcPath}/`,
+		},
+	},
+	server: {
+		host: '0.0.0.0',
+	},
 });
