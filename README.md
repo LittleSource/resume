@@ -3,7 +3,7 @@
 ![OSCS](https://www.oscs1024.com/platform/badge/LittleSource/resume-react.svg)
 ![LICENSE](https://img.shields.io/badge/LICENSE-GNU%20General%20Public-green)
 
-## 🪶Features
+## 🦾Features
 
 - 💥react+ts+vite赶时髦儿的技术栈
 
@@ -14,8 +14,6 @@
 - 👁️响应式设计
 
 ## 👋预览
-
-❤️‍🔥[在线体验](https://resume.52ym.vip/)
 
 ![简历](https://raw.githubusercontent.com/LittleSource/resume/main/resume.png)
 
